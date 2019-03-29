@@ -1,52 +1,75 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import styled from "styled-components"
 
-const link_style = {color: 'white', textDecoration: 'none'}
+const StyledHeader = styled.header`
+    margin-bottom: 1.45rem;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1.45rem 0;
+`
 
-const ListLink = props => (
-  <li style={{ display: 'inline', marginRight: '1rem'}}>
-    <Link to={props.to} style={link_style}>
-      {props.children}
-    </Link>
-  </li>
-);
+const StyledH1 = styled.h1`
+    display: inline;
+`
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <nav
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
-      <h1 style={{ display: 'inline' }}>
-        <Link to="/" style={link_style}>
-          {siteTitle}
-        </Link>
-      </h1>
-      <ul style={{ listStyle: 'none', float: 'right' }}>
-        <ListLink to='/'>Home</ListLink>
-        <ListLink to='/page2/'>About</ListLink>
-        <ListLink to="/now/">Now</ListLink>
-        <ListLink to="/contact/">Contact</ListLink>
-      </ul>
-    </nav>
-  </header>
-)
+const StyledNav = styled.nav`
+    display: inline;
+    float: right;
+    line-height: 2;
+`
+
+// I want a hover state for the links
+const ListItem = styled.li`
+    display: inline;
+    margin-left: 1.5rem;
+    list-style-type: none;
+    &:hover {
+        background-color: lavender;
+    }
+`
+
+const Header = ({ siteTitle }) => {
+    const link_style = { color: "black", textDecoration: "none" }
+
+    const NavLink = props => (
+        <ListItem>
+            <Link
+                to={props.to}
+                style={link_style}
+                activeStyle={{ color: "#69d798" }}
+            >
+                {props.children}
+            </Link>
+        </ListItem>
+    )
+
+    return (
+        <StyledHeader>
+            <StyledH1>
+                <Link to="/" style={link_style}>
+                    {siteTitle}
+                </Link>
+            </StyledH1>
+            <StyledNav>
+                <ul>
+                    <NavLink to="/">Home</NavLink>
+                    <NavLink to="/resume/">Resume</NavLink>
+                    <NavLink to="/now/">Now</NavLink>
+                    <NavLink to="/contact/">Contact</NavLink>
+                </ul>
+            </StyledNav>
+        </StyledHeader>
+    )
+}
 
 Header.propTypes = {
-  siteTitle: PropTypes.string,
+    siteTitle: PropTypes.string,
 }
 
 Header.defaultProps = {
-  siteTitle: ``,
+    siteTitle: ``,
 }
 
 export default Header
