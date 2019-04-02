@@ -55,8 +55,9 @@ const Header = ({ siteTitle }) => {
             <StyledNav>
                 <ul>
                     <NavLink to="/">Home</NavLink>
-                    <NavLink to="/resume/">Resume</NavLink>
+                    {/* <NavLink to="/resume/">Resume</NavLink> */}
                     <NavLink to="/now/">Now</NavLink>
+                    <NavLink to="/blog/">Blog</NavLink>
                     <NavLink to="/contact/">Contact</NavLink>
                 </ul>
             </StyledNav>

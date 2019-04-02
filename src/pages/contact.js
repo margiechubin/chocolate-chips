@@ -12,7 +12,7 @@ const StyledList = styled.ul`
 const ContactPage = () => {
     const contactMethodItem = contactMethod => {
         return (
-            <li key="contactMethod.name">
+            <li key={contactMethod.name}>
                 <a href={contactMethod.link}>{contactMethod.name}</a>
             </li>
         )

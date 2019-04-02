@@ -1,97 +1,137 @@
 {
-	"experience": [
-		{
-			"company": "Sprout Social",
-			"location": "Chicago, IL",
-			"title": "Software Engineer",
-			"date": "August 2017 - present"
-		},
-		{
-			"company": "JPMorgan Chase & Co.",
-			"location": "Chicago, IL",
-			"title": "Technology Analyst",
-			"date": "June 2016 - August 2016",
-			"description": [
-				"Developed a user interface for developers to interact with and test their backend",
-				"Worked primarily in AngularJS"
-				]
-		},
-		{
-			"company": "The Dow Chemical Company",
-			"location": "Champaign, IL",
-			"title": "Software Engineering Intern",
-			"date": "February 2015 - May 2016",
-			"description": [
-				"Programmed front-end and back-end of web applications using Knockout.js and C#",
-				"Managed features from design to release",
-				"Built visualizations using D3.js"
-				]
-		}
-	],
-	"involvement": [
-		{
-			"organization": "Association for Computing Machinery (ACM)",
-			"positions": "Social Chair (Fall 2016-Spring 2017), HackIllinois Staff (Spring 2016)",
-			"date": "September 2015 - Present",
-			"description": [
-				"Run social events including welcome week, barbecues, and barcrawls",
-				"Assisted in planning of HackIllinois, an annual 36-hour hack-a-thon",
-				"Negotiated with companies, coordinated volunteers, and helped with general logistics"
-				]
-		},
-		{
-			"organization": "Women in Computer Science (WCS)",
-			"positions": "Active Member (Since Fall 2013)",
-			"date": "August 2013 - Present",
-			"description": [
-				"Participate in tech talks, social events, and advising",
-				"Networking with peers, faculty, alumni, and companies"
-				]
-		},
-		{
-			"organization": "Illini Hillel - Cohen Center for Jewish Life",
-			"positions": "VP of Philanthropy (2015)",
-			"date": "August 2013 - Present",
-			"description": [
-				"Executed several programs to promote students making a difference in the community",
-				"Led and attended Alternative Spring Break and Winter Break volunteer trips"
-				]
-		},
-		{
-			"organization": "Alpha Phi Omega",
-			"positions": "Project Coordinator (Spring 2014 & Spring 2015), Retreat Leader (Spring 2014)",
-			"date": "September 2013 - December 2015",
-			"description": [
-				"Volunteered at least 24 hours each semester",
-				"Strengthened relationship between the local Soup Kitchen and the fraternity"
-				]
-		}
-	],
-	"projects": [
-		{"name": "My Weather Buddy", "date": "Fall 2015", "description": "Developed a weather website with personalized temperature verbal description, recommendation for items to bring or wear, and out-of-home schedule."},
-		{"name": "Restaurandom", "date": "March 2015", "description": "To ease the difficulty for chronically indecisive folks of choosing where to eat, we provided the user information such as the cuisine or price level of popular restaurants near a entered location by presenting a randomly generated restaurant one at a time."}
-	],
-	"courses": [
-				"The Art and Science of Web Programming (CS 498RK)",
-				"Databases (CS 411)",
-				"User Interface Design (CS 465)",
-				"Social Visualization (CS 467)",
-				"Artificial Intelligence (CS 440)",
-				"Virtual Reality (CS 498)",
-				"Computational Linguistics (LING 406)",
-				"Disability & Assistive Technology (AHS 494)",
-				"Accessible Electronic Material (AHS 494)",
-				"Designing Accessible Web Resources (AHS 494)"
-				],
-	"contact": [
-			{"name": "email", "link": "mailto:margiechubin@gmail.com", "msg": "Shoot me an email", "icon": "fa-envelope"},
-			{"name": "LinkedIn", "link": "https://www.linkedin.com/in/margiechubin", "msg": "Connect with me on LinkedIn", "icon": "fa-linkedin-square"},
-			{"name": "Github", "link": "http://www.github.com/margiechubin", "msg": "Check out my profile on Github", "icon": "fa-github"},
-			{"name": "Twitter", "link": "https://twitter.com/margarinemargie", "msg": "Follow me on Twitter", "icon": "fa-twitter"}
-	],
-	"now": [
-		{"title": "Software Engineer at Sprout Social"},
-		{"title": "Accessibility 101 at Meetup", "description": "Gave a talk at the Chicago Digital Accessibility and Inclusive Design meetup", "link": "https://youtu.be/-tH8QpIdU_E", "linkText":"Youtube video"},
-		{"title": "Taught Web Accessibility for Girl Develop It", "description": "Updated national GDI course material and led a class of 15 students"}
-	]
+    "experience": [
+        {
+            "company": "Sprout Social",
+            "location": "Chicago, IL",
+            "title": "Software Engineer",
+            "date": "August 2017 - present"
+        },
+        {
+            "company": "JPMorgan Chase & Co.",
+            "location": "Chicago, IL",
+            "title": "Technology Analyst",
+            "date": "June 2016 - August 2016",
+            "description": [
+                "Developed a user interface for developers to interact with and test their backend",
+                "Worked primarily in AngularJS"
+            ]
+        },
+        {
+            "company": "The Dow Chemical Company",
+            "location": "Champaign, IL",
+            "title": "Software Engineering Intern",
+            "date": "February 2015 - May 2016",
+            "description": [
+                "Programmed front-end and back-end of web applications using Knockout.js and C#",
+                "Managed features from design to release",
+                "Built visualizations using D3.js"
+            ]
+        }
+    ],
+    "involvement": [
+        {
+            "organization": "Association for Computing Machinery (ACM)",
+            "positions": "Social Chair (Fall 2016-Spring 2017), HackIllinois Staff (Spring 2016)",
+            "date": "September 2015 - Present",
+            "description": [
+                "Run social events including welcome week, barbecues, and barcrawls",
+                "Assisted in planning of HackIllinois, an annual 36-hour hack-a-thon",
+                "Negotiated with companies, coordinated volunteers, and helped with general logistics"
+            ]
+        },
+        {
+            "organization": "Women in Computer Science (WCS)",
+            "positions": "Active Member (Since Fall 2013)",
+            "date": "August 2013 - Present",
+            "description": [
+                "Participate in tech talks, social events, and advising",
+                "Networking with peers, faculty, alumni, and companies"
+            ]
+        },
+        {
+            "organization": "Illini Hillel - Cohen Center for Jewish Life",
+            "positions": "VP of Philanthropy (2015)",
+            "date": "August 2013 - Present",
+            "description": [
+                "Executed several programs to promote students making a difference in the community",
+                "Led and attended Alternative Spring Break and Winter Break volunteer trips"
+            ]
+        },
+        {
+            "organization": "Alpha Phi Omega",
+            "positions": "Project Coordinator (Spring 2014 & Spring 2015), Retreat Leader (Spring 2014)",
+            "date": "September 2013 - December 2015",
+            "description": [
+                "Volunteered at least 24 hours each semester",
+                "Strengthened relationship between the local Soup Kitchen and the fraternity"
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "name": "My Weather Buddy",
+            "date": "Fall 2015",
+            "description": "Developed a weather website with personalized temperature verbal description, recommendation for items to bring or wear, and out-of-home schedule."
+        },
+        {
+            "name": "Restaurandom",
+            "date": "March 2015",
+            "description": "To ease the difficulty for chronically indecisive folks of choosing where to eat, we provided the user information such as the cuisine or price level of popular restaurants near a entered location by presenting a randomly generated restaurant one at a time."
+        }
+    ],
+    "courses": [
+        "The Art and Science of Web Programming (CS 498RK)",
+        "Databases (CS 411)",
+        "User Interface Design (CS 465)",
+        "Social Visualization (CS 467)",
+        "Artificial Intelligence (CS 440)",
+        "Virtual Reality (CS 498)",
+        "Computational Linguistics (LING 406)",
+        "Disability & Assistive Technology (AHS 494)",
+        "Accessible Electronic Material (AHS 494)",
+        "Designing Accessible Web Resources (AHS 494)"
+    ],
+    "contact": [
+        {
+            "name": "Email",
+            "link": "mailto:margiechubin@gmail.com",
+            "msg": "Shoot me an email",
+            "icon": "fa-envelope"
+        },
+        {
+            "name": "LinkedIn",
+            "link": "https://www.linkedin.com/in/margiechubin",
+            "msg": "Connect with me on LinkedIn",
+            "icon": "fa-linkedin-square"
+        },
+        {
+            "name": "Github",
+            "link": "http://www.github.com/margiechubin",
+            "msg": "Check out my profile on Github",
+            "icon": "fa-github"
+        },
+        {
+            "name": "Twitter",
+            "link": "https://twitter.com/margarinemargie",
+            "msg": "Follow me on Twitter",
+            "icon": "fa-twitter"
+        }
+    ],
+    "now": [
+        {
+            "title": "Software Engineer at Sprout Social",
+            "link": "sproutsocial.com",
+            "linkText": "Sprout Social"
+        },
+        {
+            "title": "Accessibility 101 at Meetup",
+            "description": "Gave a talk at the Chicago Digital Accessibility and Inclusive Design meetup",
+            "link": "https://youtu.be/-tH8QpIdU_E",
+            "linkText": "Youtube video"
+        },
+        {
+            "title": "Taught Web Accessibility for Girl Develop It",
+            "description": "Updated national GDI course material and led a class of 15 students"
+        }
+    ]
 }

@@ -2,10 +2,16 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import styled from "styled-components"
+
+const StyledList = styled.ul`
+    margin-left: 0;
+    list-style: none;
+`
 
 const NowPage = () => {
     const getNowItem = d => (
-        <li key={d.title} style={{ listStyle: "none" }}>
+        <li key={d.title}>
             <h3>{d.title}</h3>
             <p>{d.description && d.description}</p>
             {d.link && (
@@ -24,6 +30,7 @@ const NowPage = () => {
                             title
                             description
                             link
+                            linkText
                         }
                     }
                 }
@@ -37,7 +44,7 @@ const NowPage = () => {
                             keywords={[`accessibility`, `margie`, `developer`]}
                         />
                         <h2>What am I doing now?</h2>
-                        <ul>{nowData.map(getNowItem)}</ul>
+                        <StyledList>{nowData.map(getNowItem)}</StyledList>
                     </Layout>
                 )
             }}
