@@ -1,6 +1,6 @@
-import React from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import React from 'react';
+import Layout from '../components/layout';
+import SEO from '../components/seo';
 
 const ResumePage = () => (
     <Layout>
@@ -11,6 +11,6 @@ const ResumePage = () => (
         <h2>Hi resume!</h2>
         <p>Nothing to see here at the moment... check linkedIn!</p>
     </Layout>
-)
+);
 
-export default ResumePage
+export default ResumePage;

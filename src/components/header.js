@@ -1,24 +1,24 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
-import styled from "styled-components"
+import { Link } from 'gatsby';
+import PropTypes from 'prop-types';
+import React from 'react';
+import styled from 'styled-components';
 
 const StyledHeader = styled.header`
     margin-bottom: 1.45rem;
     max-width: 960px;
     margin: 0 auto;
     padding: 1.45rem 0;
-`
+`;
 
 const StyledH1 = styled.h1`
     display: inline;
-`
+`;
 
 const StyledNav = styled.nav`
     display: inline;
     float: right;
     line-height: 2;
-`
+`;
 
 // I want a hover state for the links
 const ListItem = styled.li`
@@ -28,22 +28,22 @@ const ListItem = styled.li`
     &:hover {
         background-color: lavender;
     }
-`
+`;
 
 const Header = ({ siteTitle }) => {
-    const link_style = { color: "black", textDecoration: "none" }
+    const link_style = { color: 'black', textDecoration: 'none' };
 
     const NavLink = props => (
         <ListItem>
             <Link
                 to={props.to}
                 style={link_style}
-                activeStyle={{ color: "#69d798" }}
+                activeStyle={{ color: '#69d798' }}
             >
                 {props.children}
             </Link>
         </ListItem>
-    )
+    );
 
     return (
         <StyledHeader>
@@ -62,15 +62,15 @@ const Header = ({ siteTitle }) => {
                 </ul>
             </StyledNav>
         </StyledHeader>
-    )
-}
+    );
+};
 
 Header.propTypes = {
     siteTitle: PropTypes.string,
-}
+};
 
 Header.defaultProps = {
     siteTitle: ``,
-}
+};
 
-export default Header
+export default Header;

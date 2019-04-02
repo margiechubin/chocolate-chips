@@ -1,10 +1,10 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import React from 'react';
+import { Link, graphql } from 'gatsby';
+import Layout from '../components/layout';
+import SEO from '../components/seo';
 
 const BlogPage = ({ data }) => {
-    const { edges } = data.allMarkdownRemark
+    const { edges } = data.allMarkdownRemark;
     return (
         <Layout>
             <SEO
@@ -13,18 +13,18 @@ const BlogPage = ({ data }) => {
             />
             <h2>What am I doing now?</h2>
             {edges.map(edge => {
-                const { frontmatter: fileItem } = edge.node
+                const { frontmatter: fileItem } = edge.node;
                 return (
                     <div key={fileItem.title}>
                         <Link to={fileItem.path}>{fileItem.title}</Link>
                     </div>
-                )
+                );
             })}
         </Layout>
-    )
-}
+    );
+};
 
-export default BlogPage
+export default BlogPage;
 
 export const query = graphql`
     query blogQuery {
@@ -40,4 +40,4 @@ export const query = graphql`
             }
         }
     }
-`
+`;

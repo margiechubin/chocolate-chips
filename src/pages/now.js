@@ -1,13 +1,13 @@
-import React from "react"
-import { StaticQuery, graphql } from "gatsby"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import styled from "styled-components"
+import React from 'react';
+import { StaticQuery, graphql } from 'gatsby';
+import Layout from '../components/layout';
+import SEO from '../components/seo';
+import styled from 'styled-components';
 
 const StyledList = styled.ul`
     margin-left: 0;
     list-style: none;
-`
+`;
 
 const NowPage = () => {
     const getNowItem = d => (
@@ -20,7 +20,7 @@ const NowPage = () => {
                 </a>
             )}
         </li>
-    )
+    );
     return (
         <StaticQuery
             query={graphql`
@@ -36,7 +36,7 @@ const NowPage = () => {
                 }
             `}
             render={data => {
-                const nowData = data && data.dataJson.now
+                const nowData = data && data.dataJson.now;
                 return (
                     <Layout>
                         <SEO
@@ -46,10 +46,10 @@ const NowPage = () => {
                         <h2>What am I doing now?</h2>
                         <StyledList>{nowData.map(getNowItem)}</StyledList>
                     </Layout>
-                )
+                );
             }}
         />
-    )
-}
+    );
+};
 
-export default NowPage
+export default NowPage;
