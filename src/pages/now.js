@@ -40,7 +40,7 @@ const NowPage = () => {
                 return (
                     <Layout>
                         <SEO
-                            title="Now | Margie"
+                            title="Now"
                             keywords={[`accessibility`, `margie`, `developer`]}
                         />
                         <h2>What am I doing now?</h2>

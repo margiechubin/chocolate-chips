@@ -5,9 +5,6 @@ import styled from 'styled-components';
 
 const StyledHeader = styled.header`
     margin-bottom: 1.45rem;
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 1.45rem 0;
 `;
 
 const StyledH1 = styled.h1`

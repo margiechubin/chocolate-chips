@@ -5,7 +5,7 @@ import SEO from '../components/seo';
 const ResumePage = () => (
     <Layout>
         <SEO
-            title="Resume | Margie"
+            title="Resume"
             keywords={[`accessibility`, `margie`, `developer`]}
         />
         <h2>Hi resume!</h2>

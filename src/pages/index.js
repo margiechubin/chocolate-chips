@@ -11,7 +11,9 @@ const IndexPage = () => (
         <h2>Hi, there.</h2>
         <p>
             I'm a software engineer excited about front end development,
-            accessibility, and good food
+            accessibility, and good food. I'm working on this website as I play
+            with Gatsby, GraphQL, mdx, and figuring out one of developer's
+            hardest problems - designing your own website.
         </p>
     </Layout>
 );

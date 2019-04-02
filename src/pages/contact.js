@@ -34,7 +34,7 @@ const ContactPage = () => {
                 const contactMethods = data && data.dataJson.contact;
                 return (
                     <Layout>
-                        <SEO title="Contact Margie" />
+                        <SEO title="Contact" />
                         <h2>Contact Me</h2>
                         <StyledList>
                             {contactMethods.map(contactMethodItem)}

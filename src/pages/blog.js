@@ -8,10 +8,10 @@ const BlogPage = ({ data }) => {
     return (
         <Layout>
             <SEO
-                title="Now | Margie"
+                title="Blog Posts"
                 keywords={[`accessibility`, `margie`, `developer`]}
             />
-            <h2>What am I doing now?</h2>
+            <h2>Blog Posts</h2>
             {edges.map(edge => {
                 const { frontmatter: fileItem } = edge.node;
                 return (

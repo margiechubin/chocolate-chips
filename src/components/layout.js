@@ -2,7 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
 import Header from './header';
+import styled from 'styled-components';
+
 // import "./layout.css"
+
+const LayoutDiv = styled.div`
+    margin-bottom: 1.45rem;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1.45rem 1rem;
+`;
 
 const Layout = ({ children }) => (
     <StaticQuery
@@ -16,17 +25,10 @@ const Layout = ({ children }) => (
             }
         `}
         render={data => (
-            <>
+            <LayoutDiv>
                 <Header siteTitle={data.site.siteMetadata.title} />
-                <div
-                    style={{
-                        margin: `0 auto`,
-                        maxWidth: 960,
-                    }}
-                >
-                    <main>{children}</main>
-                </div>
-            </>
+                <main>{children}</main>
+            </LayoutDiv>
         )}
     />
 );
