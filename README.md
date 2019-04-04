@@ -8,3 +8,4 @@ TODOs:
 4. styles & typography
 5. deploy & publish
 6. Dark mode https://www.gatsbyjs.org/packages/gatsby-plugin-dark-mode/?=theme
+7. blog post next and previous

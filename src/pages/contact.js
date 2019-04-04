@@ -2,12 +2,7 @@ import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import styled from 'styled-components';
-
-const StyledList = styled.ul`
-    margin-left: 0;
-    list-style: none;
-`;
+import { StyledList } from '../components/styledComponents';
 
 const ContactPage = () => {
     const contactMethodItem = contactMethod => {

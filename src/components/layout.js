@@ -4,7 +4,7 @@ import { StaticQuery, graphql } from 'gatsby';
 import Header from './header';
 import styled from 'styled-components';
 
-// import "./layout.css"
+import './styles.css';
 
 const LayoutDiv = styled.div`
     margin-bottom: 1.45rem;

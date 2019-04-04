@@ -3,55 +3,61 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import styled from 'styled-components';
 
+const linkHoverColor = 'lavender';
+
 const StyledHeader = styled.header`
     margin-bottom: 1.45rem;
+    display: flex;
+    justify-content: space-between;
 `;
 
 const StyledH1 = styled.h1`
-    display: inline;
+    &:hover {
+        background-color: ${linkHoverColor};
+    }
 `;
 
 const StyledNav = styled.nav`
-    display: inline;
-    float: right;
-    line-height: 2;
+    display: flex;
+    line-height: 2.5;
+    list-style: none;
 `;
 
-// I want a hover state for the links
-const ListItem = styled.li`
+const NavLinkListItem = styled.li`
     display: inline;
     margin-left: 1.5rem;
-    list-style-type: none;
+    padding: 4px;
     &:hover {
-        background-color: lavender;
+        background-color: ${linkHoverColor};
     }
 `;
 
 const Header = ({ siteTitle }) => {
-    const link_style = { color: 'black', textDecoration: 'none' };
+    const linkStyle = { color: 'black', textDecoration: 'none' };
+    const linkActiveStyle = { color: '#037567', textDecoration: 'underline' };
 
     const NavLink = props => (
-        <ListItem>
+        <NavLinkListItem>
             <Link
                 to={props.to}
-                style={link_style}
-                activeStyle={{ color: '#69d798' }}
+                style={linkStyle}
+                activeStyle={linkActiveStyle}
+                partiallyActive={true}
             >
                 {props.children}
             </Link>
-        </ListItem>
+        </NavLinkListItem>
     );
 
     return (
         <StyledHeader>
             <StyledH1>
-                <Link to="/" style={link_style}>
+                <Link to="/" style={linkStyle}>
                     {siteTitle}
                 </Link>
             </StyledH1>
             <StyledNav>
                 <ul>
-                    <NavLink to="/">Home</NavLink>
                     {/* <NavLink to="/resume/">Resume</NavLink> */}
                     <NavLink to="/now/">Now</NavLink>
                     <NavLink to="/blog/">Blog</NavLink>
