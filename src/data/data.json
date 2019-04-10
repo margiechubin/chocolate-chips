@@ -3,7 +3,7 @@
         {
             "company": "Sprout Social",
             "location": "Chicago, IL",
-            "title": "Software Engineer",
+            "title": "Web Software Engineer",
             "date": "August 2017 - present"
         },
         {
@@ -32,7 +32,7 @@
         {
             "organization": "Association for Computing Machinery (ACM)",
             "positions": "Social Chair (Fall 2016-Spring 2017), HackIllinois Staff (Spring 2016)",
-            "date": "September 2015 - Present",
+            "date": "September 2015 - May 2017",
             "description": [
                 "Run social events including welcome week, barbecues, and barcrawls",
                 "Assisted in planning of HackIllinois, an annual 36-hour hack-a-thon",
@@ -42,7 +42,7 @@
         {
             "organization": "Women in Computer Science (WCS)",
             "positions": "Active Member (Since Fall 2013)",
-            "date": "August 2013 - Present",
+            "date": "August 2013 - May 2017",
             "description": [
                 "Participate in tech talks, social events, and advising",
                 "Networking with peers, faculty, alumni, and companies"
@@ -51,7 +51,7 @@
         {
             "organization": "Illini Hillel - Cohen Center for Jewish Life",
             "positions": "VP of Philanthropy (2015)",
-            "date": "August 2013 - Present",
+            "date": "August 2013 - May 2017",
             "description": [
                 "Executed several programs to promote students making a difference in the community",
                 "Led and attended Alternative Spring Break and Winter Break volunteer trips"
@@ -65,18 +65,6 @@
                 "Volunteered at least 24 hours each semester",
                 "Strengthened relationship between the local Soup Kitchen and the fraternity"
             ]
-        }
-    ],
-    "projects": [
-        {
-            "name": "My Weather Buddy",
-            "date": "Fall 2015",
-            "description": "Developed a weather website with personalized temperature verbal description, recommendation for items to bring or wear, and out-of-home schedule."
-        },
-        {
-            "name": "Restaurandom",
-            "date": "March 2015",
-            "description": "To ease the difficulty for chronically indecisive folks of choosing where to eat, we provided the user information such as the cuisine or price level of popular restaurants near a entered location by presenting a randomly generated restaurant one at a time."
         }
     ],
     "courses": [
@@ -119,7 +107,7 @@
     ],
     "now": [
         {
-            "title": "Working as a Software Engineer at Sprout Social",
+            "title": "Working as a Web Software Engineer at Sprout Social",
             "link": "https://sproutsocial.com/",
             "linkText": "Check out Sprout Social"
         },

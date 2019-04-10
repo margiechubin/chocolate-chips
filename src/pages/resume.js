@@ -9,7 +9,7 @@ const ResumePage = () => (
             keywords={[`accessibility`, `margie`, `developer`]}
         />
         <h2>Hi resume!</h2>
-        <p>Nothing to see here at the moment... check linkedIn!</p>
+        <p>Nothing to see here at the moment... check LinkedIn!</p>
     </Layout>
 );
 
