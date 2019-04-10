@@ -4,23 +4,12 @@ import React from 'react';
 import styled from 'styled-components';
 
 const linkHoverColor = 'lavender';
-
-const StyledHeader = styled.header`
-    margin-bottom: 1.45rem;
-    display: flex;
-    justify-content: space-between;
-`;
+const secondaryColor = '#037567';
 
 const StyledH1 = styled.h1`
     &:hover {
         background-color: ${linkHoverColor};
     }
-`;
-
-const StyledNav = styled.nav`
-    display: flex;
-    line-height: 2.5;
-    list-style: none;
 `;
 
 const NavLinkListItem = styled.li`
@@ -34,37 +23,57 @@ const NavLinkListItem = styled.li`
 
 const Header = ({ siteTitle }) => {
     const linkStyle = { color: 'black', textDecoration: 'none' };
-    const linkActiveStyle = { color: '#037567', textDecoration: 'underline' };
+    const linkActiveStyle = {
+        color: secondaryColor,
+        textDecoration: 'underline',
+    };
+    const headerLinkActiveStyle = { backgroundColor: linkHoverColor };
 
-    const NavLink = props => (
+    const NavLink = ({ to, children }) => (
         <NavLinkListItem>
             <Link
-                to={props.to}
+                to={to}
                 style={linkStyle}
                 activeStyle={linkActiveStyle}
                 partiallyActive={true}
             >
-                {props.children}
+                {children}
             </Link>
         </NavLinkListItem>
     );
 
     return (
-        <StyledHeader>
+        <header
+            style={{
+                marginBottom: '1.45rem',
+                display: 'flex',
+                justifyContent: 'space-between',
+            }}
+        >
             <StyledH1>
-                <Link to="/" style={linkStyle}>
+                <Link
+                    to="/"
+                    style={linkStyle}
+                    activeStyle={headerLinkActiveStyle}
+                >
                     {siteTitle}
                 </Link>
             </StyledH1>
-            <StyledNav>
-                <ul>
+            <nav
+                style={{
+                    display: 'flex',
+                    lineHeight: '2.5',
+                    listStyle: 'none',
+                }}
+            >
+                <ul style={{ marginLeft: '0' }}>
                     {/* <NavLink to="/resume/">Resume</NavLink> */}
                     <NavLink to="/now/">Now</NavLink>
                     <NavLink to="/blog/">Blog</NavLink>
                     <NavLink to="/contact/">Contact</NavLink>
                 </ul>
-            </StyledNav>
-        </StyledHeader>
+            </nav>
+        </header>
     );
 };
 

@@ -12,12 +12,12 @@ const BlogPage = ({ data }) => {
                 title="Blog Posts"
                 keywords={[`accessibility`, `margie`, `developer`]}
             />
-            <h2>Blog Posts</h2>
+            <h2>Read my thoughts</h2>
             <StyledList>
                 {edges.map(edge => {
                     const { frontmatter: fileItem } = edge.node;
                     return (
-                        <li key={fileItem.title}>
+                        <li key={fileItem.title} style={{ marginTop: '24px' }}>
                             <Link to={fileItem.path}>{fileItem.title}</Link>
                         </li>
                     );

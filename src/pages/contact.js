@@ -5,10 +5,10 @@ import SEO from '../components/seo';
 import { StyledList } from '../components/styledComponents';
 
 const ContactPage = () => {
-    const contactMethodItem = contactMethod => {
+    const contactMethodItem = ({ name, link }) => {
         return (
-            <li key={contactMethod.name}>
-                <a href={contactMethod.link}>{contactMethod.name}</a>
+            <li key={name} style={{ marginTop: '24px' }}>
+                <a href={link}>{name}</a>
             </li>
         );
     };
@@ -26,13 +26,15 @@ const ContactPage = () => {
                 }
             `}
             render={data => {
-                const contactMethods = data && data.dataJson.contact;
+                const {
+                    dataJson: { contact },
+                } = data;
                 return (
                     <Layout>
                         <SEO title="Contact" />
-                        <h2>Contact Me</h2>
+                        <h2>Let's connect!</h2>
                         <StyledList>
-                            {contactMethods.map(contactMethodItem)}
+                            {contact.map(contactMethodItem)}
                         </StyledList>
                     </Layout>
                 );

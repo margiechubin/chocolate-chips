@@ -5,15 +5,24 @@ import SEO from '../components/seo';
 import { StyledList } from '../components/styledComponents';
 
 const NowPage = () => {
-    const getNowItem = d => (
-        <li key={d.title}>
-            <h3>{d.title}</h3>
-            <p>{d.description && d.description}</p>
-            {d.link && (
-                <a href={d.link} target="_blank" rel="noopener noreferrer">
-                    {d.linkText}
-                </a>
-            )}
+    const getNowItem = ({ title, description, link, linkText }) => (
+        <li
+            key={title}
+            style={{
+                marginTop: '48px',
+                borderLeft: '3px solid #037567',
+                paddingLeft: '16px',
+            }}
+        >
+            <h3>{title}</h3>
+            <p>{description}</p>
+            <div>
+                {link && (
+                    <a href={link} target="_blank" rel="noopener noreferrer">
+                        {linkText}
+                    </a>
+                )}
+            </div>
         </li>
     );
     return (
@@ -31,6 +40,9 @@ const NowPage = () => {
                 }
             `}
             render={data => {
+                const {
+                    dataJson: { now },
+                } = data;
                 return (
                     <Layout>
                         <SEO
@@ -38,9 +50,7 @@ const NowPage = () => {
                             keywords={[`accessibility`, `margie`, `developer`]}
                         />
                         <h2>What am I doing now?</h2>
-                        <StyledList>
-                            {data && data.dataJson.now.map(getNowItem)}
-                        </StyledList>
+                        <StyledList>{now && now.map(getNowItem)}</StyledList>
                     </Layout>
                 );
             }}

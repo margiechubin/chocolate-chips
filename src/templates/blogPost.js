@@ -17,6 +17,7 @@ const Template = props => {
                 backgroundColor: '#037567',
                 color: 'white',
                 padding: '4px',
+                marginRight: '4px',
             }}
         >
             {tag}
@@ -31,7 +32,7 @@ const Template = props => {
             />
             <div style={{ margin: '1.45rem 0' }}>
                 <div style={{ float: 'right' }}>
-                    <Link to="/blog">Back to Blog Posts</Link>
+                    <Link to="/blog/">Back to Blog Posts</Link>
                 </div>
                 <h2>{title}</h2>
                 <div
@@ -41,11 +42,12 @@ const Template = props => {
                     }}
                 >
                     {tags && tags.map(getTag)}
-                    <div style={{ padding: '4px' }}>Posted on {date}</div>
+                    <div style={{ padding: '4px 4px 4px 0' }}>
+                        Posted on {date}
+                    </div>
                 </div>
             </div>
             <div dangerouslySetInnerHTML={{ __html: html }} />
-            <Link to="/blog">Back to Blog Posts</Link>
         </Layout>
     );
 };

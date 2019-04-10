@@ -119,18 +119,18 @@
     ],
     "now": [
         {
-            "title": "Software Engineer at Sprout Social",
-            "link": "sproutsocial.com",
-            "linkText": "Sprout Social"
+            "title": "Working as a Software Engineer at Sprout Social",
+            "link": "https://sproutsocial.com/",
+            "linkText": "Check out Sprout Social"
         },
         {
-            "title": "Accessibility 101 at Meetup",
+            "title": "Gave an Accessibility 101 talk at a Meetup",
             "description": "Gave a talk at the Chicago Digital Accessibility and Inclusive Design meetup",
             "link": "https://youtu.be/-tH8QpIdU_E",
-            "linkText": "Youtube video"
+            "linkText": "Watch the Youtube video"
         },
         {
-            "title": "Taught Web Accessibility for Girl Develop It",
+            "title": "Taught a Web Accessibility class for Girl Develop It",
             "description": "Updated national GDI course material and led a class of 15 students"
         }
     ]
