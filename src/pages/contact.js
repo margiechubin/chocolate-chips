@@ -2,12 +2,11 @@ import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import { StyledList } from '../components/styledComponents';
 
 const ContactPage = () => {
     const contactMethodItem = ({ name, link }) => {
         return (
-            <li key={name} style={{ marginTop: '24px' }}>
+            <li key={name} style={{ marginTop: '16px' }}>
                 <a href={link}>{name}</a>
             </li>
         );
@@ -33,9 +32,9 @@ const ContactPage = () => {
                     <Layout>
                         <SEO title="Contact" />
                         <h2>Let's connect!</h2>
-                        <StyledList>
+                        <ul className="List">
                             {contact.map(contactMethodItem)}
-                        </StyledList>
+                        </ul>
                     </Layout>
                 );
             }}

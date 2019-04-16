@@ -1,36 +1,18 @@
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
-import styled from 'styled-components';
-
-const linkHoverColor = 'lavender';
-const secondaryColor = '#037567';
-
-const StyledH1 = styled.h1`
-    &:hover {
-        background-color: ${linkHoverColor};
-    }
-`;
-
-const NavLinkListItem = styled.li`
-    display: inline;
-    margin-left: 1.5rem;
-    padding: 4px;
-    &:hover {
-        background-color: ${linkHoverColor};
-    }
-`;
 
 const Header = ({ siteTitle }) => {
-    const linkStyle = { color: 'black', textDecoration: 'none' };
-    const linkActiveStyle = {
-        color: secondaryColor,
-        textDecoration: 'underline',
+    const linkStyle = {
+        color: 'black',
+        textDecoration: 'none',
+        padding: '4px',
     };
-    const headerLinkActiveStyle = { backgroundColor: linkHoverColor };
+    const linkHoverColor = '#573ede';
+    const linkActiveStyle = { backgroundColor: linkHoverColor, color: 'white' };
 
     const NavLink = ({ to, children }) => (
-        <NavLinkListItem>
+        <li className="mainNav-link">
             <Link
                 to={to}
                 style={linkStyle}
@@ -39,7 +21,7 @@ const Header = ({ siteTitle }) => {
             >
                 {children}
             </Link>
-        </NavLinkListItem>
+        </li>
     );
 
     return (
@@ -50,22 +32,12 @@ const Header = ({ siteTitle }) => {
                 justifyContent: 'space-between',
             }}
         >
-            <StyledH1>
-                <Link
-                    to="/"
-                    style={linkStyle}
-                    activeStyle={headerLinkActiveStyle}
-                >
+            <h1>
+                <Link to="/" style={linkStyle} activeStyle={linkActiveStyle}>
                     {siteTitle}
                 </Link>
-            </StyledH1>
-            <nav
-                style={{
-                    display: 'flex',
-                    lineHeight: '2.5',
-                    listStyle: 'none',
-                }}
-            >
+            </h1>
+            <nav className="mainNav">
                 <ul style={{ marginLeft: '0' }}>
                     {/* <NavLink to="/resume/">Resume</NavLink> */}
                     <NavLink to="/now/">Now</NavLink>

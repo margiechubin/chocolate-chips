@@ -2,7 +2,6 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import { StyledList } from '../components/styledComponents';
 
 const BlogPage = ({ data }) => {
     const { edges } = data.allMarkdownRemark;
@@ -13,16 +12,16 @@ const BlogPage = ({ data }) => {
                 keywords={[`accessibility`, `margie`, `developer`]}
             />
             <h2>Read my thoughts</h2>
-            <StyledList>
+            <ul className="List">
                 {edges.map(edge => {
                     const { frontmatter: fileItem } = edge.node;
                     return (
-                        <li key={fileItem.title} style={{ marginTop: '24px' }}>
+                        <li key={fileItem.title} style={{ marginTop: '16px' }}>
                             <Link to={fileItem.path}>{fileItem.title}</Link>
                         </li>
                     );
                 })}
-            </StyledList>
+            </ul>
         </Layout>
     );
 };

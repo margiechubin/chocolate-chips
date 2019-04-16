@@ -42,9 +42,7 @@ const Template = props => {
                     }}
                 >
                     {tags && tags.map(getTag)}
-                    <div style={{ padding: '4px 4px 4px 0' }}>
-                        Posted on {date}
-                    </div>
+                    <div className="blogPost-date">Posted on {date}</div>
                 </div>
             </div>
             <div dangerouslySetInnerHTML={{ __html: html }} />

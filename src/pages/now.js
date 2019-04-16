@@ -2,7 +2,6 @@ import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import { StyledList } from '../components/styledComponents';
 
 const NowPage = () => {
     const getNowItem = ({ title, description, link, linkText }) => (
@@ -50,7 +49,7 @@ const NowPage = () => {
                             keywords={[`accessibility`, `margie`, `developer`]}
                         />
                         <h2>What am I doing now?</h2>
-                        <StyledList>{now && now.map(getNowItem)}</StyledList>
+                        <ul className="List">{now && now.map(getNowItem)}</ul>
                     </Layout>
                 );
             }}

@@ -8,7 +8,7 @@ module.exports = {
         `gatsby-plugin-react-helmet`,
         `gatsby-transformer-json`,
         `gatsby-transformer-remark`,
-        `gatsby-plugin-styled-components`,
+        `gatsby-plugin-sass`,
         {
             resolve: `gatsby-source-filesystem`,
             options: {
@@ -45,4 +45,4 @@ module.exports = {
             },
         },
     ],
-}
+};
