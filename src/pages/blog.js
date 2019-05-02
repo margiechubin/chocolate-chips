@@ -9,7 +9,7 @@ const BlogPage = ({ data }) => {
         <Layout>
             <SEO
                 title="Blog Posts"
-                keywords={[`accessibility`, `margie`, `developer`]}
+                keywords={[`accessibility`, `margie`, `developer`, `react`]}
             />
             <h2>Read my thoughts</h2>
             <ul className="List">
@@ -17,7 +17,7 @@ const BlogPage = ({ data }) => {
                     const { frontmatter: fileItem } = edge.node;
                     return (
                         <li key={fileItem.title} style={{ marginTop: '16px' }}>
-                            <Link to={fileItem.path}>{fileItem.title}</Link>
+                            <Link to={fileItem.path}>{fileItem.title}</Link> - {fileItem.excerpt} 
                         </li>
                     );
                 })}
@@ -37,6 +37,7 @@ export const query = graphql`
                         title
                         path
                         date
+                        excerpt
                     }
                 }
             }
