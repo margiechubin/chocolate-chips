@@ -14,7 +14,7 @@ May 16th is Global Accessibility Awareness Day, or GAAD, inspiring people all ov
 
 Individuals with physical disabilities
 * Some people can’t use a mouse
-* Mouse requires a certain amount of dexterity
+* The mouse requires a certain amount of dexterity
 * Might use keyboard or other alternative input devices
 
 Screen Reader Users
@@ -40,9 +40,10 @@ Operable - Keyboard Access
 </blockquote>
 <cite><a href="https://www.w3.org/TR/WCAG21/#keyboard" target="_blank">WCAG 2.1 Success Criterion 2.1.1 Keyboard</a></cite>
 
-This is the official definition, but basically this says that all content needs to be operable through a keyboard interface
 
-WCAG Levels of Compliance
+This is the official definition, but basically this says that all content needs to be operable through a keyboard interface.
+
+#### WCAG Levels of Compliance
 * A is must support, AA is should support, and AAA is may support
 * Level A prevent showstoppers where user would not be able to use an application at all
 * AA are the ones that would cause a user to find it difficult to use an application, but not impossible
@@ -61,7 +62,9 @@ All functionality of the content is operable through a keyboard interface
 1. **Semantics!** Use native HTML elements whenever possible. They will be accessible by default and allow the correct keyboard navigation
 2. Use `tabIndex=0` to make the element focusable and implement the correct behavior yourself with `onKeyPress`/`onKeyDown` AND handling the correct key events. The key events you need to handle depend on the feature you are implementing.
 
+
 Here is a code example of a fake button. Or... you could just use a button.
+
 ```jsx
 const clickMe = () => console.log('clicked!');
 
@@ -80,15 +83,19 @@ const fakeButton =>
 #### Menu example
 * use arrow keys to move up and down the menu items
 * items should not control their own focus (be tab-able)
-<iframe src="https://giphy.com/embed/MFI3BIo0GocinxfhKa" width="402" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+
+The following is an iframe, which is probably not accessible so if you can't see the image (or it fails) it is a gif of using keyboard navigation on a menu button.
+<iframe src="https://giphy.com/embed/MFI3BIo0GocinxfhKa" width="402" height="480" frameBorder="0" class="giphy-embed" allowFullScreen aria-hidden="true"></iframe>
 
 ### Focus on the user
+
 Focus Indicators - Can you see where you are on the page?
+
 * If an element is interactive, it must have a visible focus state
 * Browsers provide native focus states for native browser elements.
     - Can remove them using `outline:0` or `outline:none`.
     - Native focus states are not consistent across browsers, which is a reason to replace them
-    - TLDR; you can remove native focus states IF you replace them
+    - **TLDR; you can remove native focus states IF you replace them**
 * The Chrome Extension [Focus Indicator](https://chrome.google.com/webstore/detail/focus-indicator/heeoeadndnhebmfebjccbhmccmaoedlf) displays a focus indicator on all active elements, even if it is suppressed
 
 **Focus Order** is the idea that the order in which items on the page receive focus should be logical. The focus order is based on the order of elements in the DOM.
