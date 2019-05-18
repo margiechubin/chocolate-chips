@@ -9,7 +9,7 @@ const BlogPage = ({ data }) => {
         <Layout>
             <SEO
                 title="Blog Posts"
-                keywords={[`accessibility`, `margie`, `developer`, `react`]}
+                keywords={[`accessibility`, `margie`, `developer`, `react`, `a11y`]}
             />
             <h2>Read my thoughts</h2>
             <ul className="List">

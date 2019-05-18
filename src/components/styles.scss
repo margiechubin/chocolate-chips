@@ -14,7 +14,6 @@ a {
 h1 {
     &:hover {
         background-color: $hover-color;
-        text-decoration: underline;
     }
 }
 
@@ -36,7 +35,6 @@ h4 {
 
         &:hover {
             background-color: $hover-color;
-            text-decoration: underline;
         }
     }
 }

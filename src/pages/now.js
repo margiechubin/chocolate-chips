@@ -46,7 +46,7 @@ const NowPage = () => {
                     <Layout>
                         <SEO
                             title="Now"
-                            keywords={[`accessibility`, `margie`, `developer`]}
+                            keywords={[`accessibility`, `margie`, `developer`, `react`, `a11y`]}
                         />
                         <h2>What am I doing now?</h2>
                         <ul className="List">{now && now.map(getNowItem)}</ul>
