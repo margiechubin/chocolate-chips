@@ -2,6 +2,7 @@ import React from 'react';
 import { graphql, Link } from 'gatsby';
 import SEO from '../components/seo';
 import Layout from '../components/layout';
+import { rhythm, scale } from '../utils/typography';
 
 const Template = props => {
     const {
@@ -30,7 +31,14 @@ const Template = props => {
                 title={`${title}`}
                 keywords={[`accessibility`, `margie`, `developer`]}
             />
-            <div style={{ margin: '1.45rem 0' }}>
+            <div
+                style={{
+                    ...scale(-1 / 5),
+                    display: `block`,
+                    marginBottom: rhythm(1),
+                    marginTop: rhythm(-1),
+                }}
+            >
                 <div style={{ float: 'right' }}>
                     <Link to="/blog/">Back to Blog Posts</Link>
                 </div>
@@ -38,7 +46,7 @@ const Template = props => {
                 <div
                     style={{
                         display: 'flex',
-                        margin: '1rem 0',
+                        marginBottom: rhythm(1),
                     }}
                 >
                     {tags && tags.map(getTag)}
