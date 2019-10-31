@@ -2,7 +2,7 @@ import Typography from 'typography';
 import kirkhamTheme from 'typography-theme-kirkham';
 
 const theme = kirkhamTheme;
-theme.headerFontFamily = ['Merriweather', 'serif'];
+theme.headerFontFamily = ['PT Sans', 'sans-serif'];
 theme.bodyFontFamily = ['PT Sans', 'sans-serif'];
 // theme.scaleRatio = 1.5;
 theme.baseFontSize = '20px';

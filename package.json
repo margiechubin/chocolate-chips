@@ -1,9 +1,9 @@
 {
-    "name": "gatsby-starter-default",
+    "name": "margie-website",
     "private": true,
-    "description": "A simple starter to get up and developing quickly with Gatsby",
+    "description": "website built on gatsby starter default",
     "version": "0.1.0",
-    "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+    "author": "Margie Chubin",
     "dependencies": {
         "babel-plugin-styled-components": "^1.10.0",
         "gatsby": "^2.3.23",
@@ -29,7 +29,8 @@
         "prettier": "^1.16.4"
     },
     "keywords": [
-        "accessibility", "a11y"
+        "accessibility",
+        "a11y"
     ],
     "license": "MIT",
     "scripts": {
