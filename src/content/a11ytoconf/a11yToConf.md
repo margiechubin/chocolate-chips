@@ -39,6 +39,11 @@ UI components bake in our assumptions about design and development - we  create 
 
 [Garbage Pail Components - Slides](https://marcysutton.github.io/garbage-pail-components/)
 
+## Learning from the disability community
+Your biases will influence your designs and approach to accessibility. We need to work alongside the disabled community. We need to hire disabled people, test products with disabled people, and talk to disabled groups. We need to demand that disabled people have a voice.
+
+[Follow Liz Davis on Twitter](https://twitter.com/lizdavis__)
+
 ## Video game accessibility
 Why do video games need to be accessible - access isn’t about “basic rights” it’s about the quality of life that people with disabilities deserve - access to culture, pain management, and human connection
 
@@ -61,7 +66,14 @@ Javascript is needed for accessibility because it can enhance interactions and f
 
 [Slides for Javascript and Accessibility - an Unconventional Romance](https://lkopacz.github.io/a11yTo-a11y-js-unconventional-romance/#/)
 
-## Including people with disabilities
+## Accessibility Education
+Working accessibility into an organization is difficult, but finding friends and allies, documenting work, assembling resources, and meeting people where they are at are all ways to advance the work. Accessibility needs to be integrated into processes and systems in order for it to work.
+
+[Follow Devon Persing on Twitter](https://twitter.com/devonpersing)
+
+[Try the Focus-Orderer Figma Plugin](https://www.figma.com/c/plugin/731310036968334777/A11y---Focus-Orderer)
+
+## Being intentional with our inclusion
 We need to include people with disabilities and let them know their participation is valued, not just tolerated or accommodated.
 
 [Follow Derek Featherstone on Twitter](https://twitter.com/feather)
@@ -71,7 +83,9 @@ We need to include people with disabilities and let them know their participatio
 
 [Adrian Roselli](https://adrianroselli.com/2019/10/a11yweekto-recap.html)
 
-The conference had a high presence on Twitter. You can also check out the hashtag #a11yToConf on Twitter to see all the live-tweeted thoughts from the conference.
+## Twitter
+
+The conference had a high presence on Twitter. You can also check out the hashtag #a11yToConf on Twitter to see all the live-tweeted thoughts from the conference. You can diversify who you follow and what those people are talking about by following some of the people I linked in this post.
 
 A few of my tweets
 
