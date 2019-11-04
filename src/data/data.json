@@ -23,7 +23,6 @@
             "date": "February 2015 - May 2016",
             "description": [
                 "Programmed front-end and back-end of web applications using Knockout.js and C#",
-                "Managed features from design to release",
                 "Built visualizations using D3.js"
             ]
         }
@@ -81,6 +80,12 @@
     ],
     "contact": [
         {
+            "name": "Twitter",
+            "link": "https://twitter.com/margarinemargie",
+            "msg": "Follow me on Twitter @margarinemargie",
+            "icon": "fa-twitter"
+        },
+        {
             "name": "Email",
             "link": "mailto:margiechubin@gmail.com",
             "msg": "Shoot me an email",
@@ -97,12 +102,6 @@
             "link": "http://www.github.com/margiechubin",
             "msg": "Check out my profile on Github",
             "icon": "fa-github"
-        },
-        {
-            "name": "Twitter",
-            "link": "https://twitter.com/margarinemargie",
-            "msg": "Follow me on Twitter",
-            "icon": "fa-twitter"
         }
     ],
     "now": [
@@ -115,11 +114,13 @@
             "title": "Gave an Accessibility 101 talk at a Meetup",
             "description": "Gave a talk at the Chicago Digital Accessibility and Inclusive Design meetup",
             "link": "https://youtu.be/-tH8QpIdU_E",
-            "linkText": "Watch the Youtube video"
+            "linkText": "Watch the Youtube video",
+            "date": "October 2018"
         },
         {
             "title": "Taught a Web Accessibility class for Girl Develop It",
-            "description": "Updated national GDI course material and led a class of 15 students"
+            "description": "Updated national GDI course material and led a class of 15 students",
+            "date": "October 2018"
         }
     ]
 }

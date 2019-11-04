@@ -4,16 +4,16 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 
 const NowPage = () => {
-    const getNowItem = ({ title, description, link, linkText }) => (
+    const getNowItem = ({ title, date = '', description, link, linkText }) => (
         <li
             key={title}
             style={{
-                marginTop: '48px',
-                borderLeft: '3px solid #037567',
+                marginTop: '32px',
+                borderLeft: '5px solid #037567',
                 paddingLeft: '16px',
             }}
         >
-            <h3>{title}</h3>
+            <h3 style={{ display: 'inline' }}>{title}</h3>{date && <span> - {date}</span>}
             <p>{description}</p>
             <div>
                 {link && (
@@ -31,6 +31,7 @@ const NowPage = () => {
                     dataJson {
                         now {
                             title
+                            date
                             description
                             link
                             linkText

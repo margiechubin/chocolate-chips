@@ -4,9 +4,9 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 
 const ContactPage = () => {
-    const contactMethodItem = ({ name, link }) => {
+    const contactMethodItem = ({ name, link, msg }) => {
         return (
-            <li key={name} style={{ marginTop: '16px' }}>
+            <li key={name}>
                 <a href={link}>{name}</a>
             </li>
         );
