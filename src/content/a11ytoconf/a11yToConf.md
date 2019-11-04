@@ -18,7 +18,7 @@ HTML is **semantic** by default. We have to use it correctly and intentionally a
 [Follow Scott O’Hara on Twitter](https://twitter.com/scottohara)
 
 ## Accessibility rights are human rights and we need to fight for them in an ethical manner
-These rights include participation, the right to information, security, privacy, and independence. Shakedown legal strategies are not transparent, don't include monitoring, and resolve around money, creating fear-based motivations and negative media that don't actually change the culture to benefit those who need accessibility.
+These rights include participation, the right to information, security, privacy, and independence. Shakedown legal strategies are not transparent, don't include monitoring, and revolve around money, creating fear-based motivations and negative media that don't actually change the culture to benefit those who need accessibility.
 
 [Follow Lainey Feingold on Twitter](https://twitter.com/LFLegal)
 
@@ -83,11 +83,14 @@ We need to include people with disabilities and let them know their participatio
 
 [Adrian Roselli](https://adrianroselli.com/2019/10/a11yweekto-recap.html)
 
+[Web Axe Blog](http://www.webaxe.org/accessibility-toronto-conference-2019/)
+
+
 ## Twitter
 
 The conference had a high presence on Twitter. You can also check out the hashtag #a11yToConf on Twitter to see all the live-tweeted thoughts from the conference. You can diversify who you follow and what those people are talking about by following some of the people I linked in this post.
 
-A few of my tweets
+A few of my tweets:
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Talking about how access is a privacy and independence issue, <a href="https://twitter.com/LFLegal?ref_src=twsrc%5Etfw">@LFLegal</a> mentioned how inaccessible self-checkout is not a self-checkout if you&#39;re disabled and require help. <a href="https://twitter.com/hashtag/a11yTOConf?src=hash&amp;ref_src=twsrc%5Etfw">#a11yTOConf</a></p>&mdash; Margie, but spooky (@margarinemargie) <a href="https://twitter.com/margarinemargie/status/1187391854691700738?ref_src=twsrc%5Etfw">October 24, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
