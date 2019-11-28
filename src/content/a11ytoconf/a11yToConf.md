@@ -2,7 +2,7 @@
 path: '/blog/a11ytoconf'
 date: '2019-10-30'
 title: 'Accessibility Toronto 2019'
-excerpt: 'My thoughts on A11yToConf 2019'
+excerpt: 'Highlights from A11yToConf 2019'
 tags: ['accessibility']
 ---
 

@@ -52,9 +52,10 @@ const Header = ({ siteTitle }) => {
             <nav className="mainNav">
                 <ul style={{ marginLeft: '0' }}>
                     {/* <NavLink to="/resume/">Resume</NavLink> */}
-                    <NavLink to="/now/">Now</NavLink>
-                    <NavLink to="/blog/">Blog</NavLink>
-                    <NavLink to="/contact/">Contact</NavLink>
+                    {/* <NavLink to="/now/">Now</NavLink> */}
+                    <NavLink to="/speaking/">Speaking</NavLink>
+                    <NavLink to="/blog/">Writing</NavLink>
+                    <NavLink to="/contact/">Contact me</NavLink>
                 </ul>
             </nav>
         </header>

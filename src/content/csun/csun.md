@@ -2,7 +2,7 @@
 path: '/blog/csun'
 date: '2019-04-02'
 title: 'CSUN Assistive Technology Conference 2019'
-excerpt: 'My thoughts on CSUN 2019'
+excerpt: 'My recap of CSUN 2019'
 tags: ['accessibility']
 ---
 

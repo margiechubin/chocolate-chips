@@ -82,26 +82,41 @@
         {
             "name": "Twitter",
             "link": "https://twitter.com/margarinemargie",
-            "msg": "Follow me on Twitter @margarinemargie",
-            "icon": "fa-twitter"
+            "msg": "Follow me on Twitter @margarinemargie"
         },
         {
             "name": "Email",
             "link": "mailto:margiechubin@gmail.com",
-            "msg": "Shoot me an email",
-            "icon": "fa-envelope"
+            "msg": "Shoot me an email"
         },
         {
             "name": "LinkedIn",
             "link": "https://www.linkedin.com/in/margiechubin",
-            "msg": "Connect with me on LinkedIn",
-            "icon": "fa-linkedin-square"
+            "msg": "Connect with me on LinkedIn"
         },
         {
             "name": "Github",
             "link": "http://www.github.com/margiechubin",
-            "msg": "Check out my profile on Github",
-            "icon": "fa-github"
+            "msg": "Check out my profile on Github"
+        },
+        {
+            "name": "Instagram",
+            "link": "https://www.instagram.com/margiechubs/",
+            "msg": "Follow me on Instagram @margiechubs"
+        }
+    ],
+    "speaking": [
+        {
+            "title": "Gave an Accessibility 101 talk at a Meetup",
+            "description": "Gave a talk at the Chicago Digital Accessibility and Inclusive Design meetup",
+            "link": "https://youtu.be/-tH8QpIdU_E",
+            "linkText": "Watch the Youtube video (with captions!)",
+            "date": "October 2018"
+        },
+        {
+            "title": "Taught a Web Accessibility class for Girl Develop It",
+            "description": "Updated national GDI course material and led a class of 15 students",
+            "date": "October 2018"
         }
     ],
     "now": [
