@@ -17,8 +17,9 @@ const Template = props => {
             style={{
                 backgroundColor: '#037567',
                 color: 'white',
-                padding: '4px',
+                padding: '4px 8px',
                 marginRight: '4px',
+                borderRadius: '3px',
             }}
         >
             {tag}

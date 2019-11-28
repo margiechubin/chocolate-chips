@@ -7,12 +7,11 @@ const Header = ({ siteTitle }) => {
     const linkStyle = {
         color: 'black',
         textDecoration: 'none',
-        padding: '4px',
+        padding: '4px 8px',
         textTransform: 'uppercase',
         fontFamily: '"PT Sans", sans-serif',
     };
-    const linkHoverColor = '#573ede';
-    const linkActiveStyle = { backgroundColor: linkHoverColor, color: 'white' };
+    const linkActiveStyle = { borderBottom: '3px solid #573ede' }
 
     const NavLink = ({ to, children }) => (
         <li className="mainNav-link">
@@ -41,8 +40,8 @@ const Header = ({ siteTitle }) => {
                     style={{
                         ...linkStyle,
                         marginLeft: '-4px',
-                        letterSpacing: '2px',
-                        fontSize: '1.6rem',
+                        display: 'flex',
+                        flexWrap: 'wrap'
                     }}
                     activeStyle={linkActiveStyle}
                 >
@@ -55,7 +54,7 @@ const Header = ({ siteTitle }) => {
                     {/* <NavLink to="/now/">Now</NavLink> */}
                     <NavLink to="/speaking/">Speaking</NavLink>
                     <NavLink to="/blog/">Writing</NavLink>
-                    <NavLink to="/contact/">Contact me</NavLink>
+                    <NavLink to="/contact/">Contact</NavLink>
                 </ul>
             </nav>
         </header>

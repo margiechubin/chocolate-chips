@@ -14,7 +14,7 @@ const NowPage = () => {
 			}}
 		>
 			<h3 style={{ display: 'inline' }}>{title}</h3>{date && <span> - {date}</span>}
-			<p>{description}</p>
+			<p style={{ marginTop: '12px' }}>{description}</p>
 			<div>
 				{link && (
 					<a href={link} target="_blank" rel="noopener noreferrer">

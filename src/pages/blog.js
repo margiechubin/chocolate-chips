@@ -20,7 +20,7 @@ const BlogPage = ({ data }) => {
                     `javascript`,
                 ]}
             />
-            <h2>Some musings</h2>
+            <h2>Some thoughts</h2>
             <ul className="List">
                 {posts.map(edge => {
                     const { frontmatter: fileItem } = edge.node;
@@ -30,7 +30,7 @@ const BlogPage = ({ data }) => {
                             style={{ marginBottom: rhythm(1) }}
                         >
                             <Link to={fileItem.path}>{fileItem.title}</Link>
-                            <p>{fileItem.excerpt}</p>
+                            <p style={{ marginTop: '8px' }}>{fileItem.excerpt}</p>
                         </li>
                     );
                 })}
