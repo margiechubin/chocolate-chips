@@ -84,9 +84,6 @@ const fakeButton =>
 * use arrow keys to move up and down the menu items
 * items should not control their own focus (be tab-able)
 
-The following is an iframe, which is probably not accessible so if you can't see the image (or it fails) it is a gif of using keyboard navigation on a menu button.
-<iframe src="https://giphy.com/embed/MFI3BIo0GocinxfhKa" width="402" height="480" frameBorder="0" class="giphy-embed" allowFullScreen aria-hidden="true"></iframe>
-
 ### Focus on the user
 
 Focus Indicators - Can you see where you are on the page?
@@ -127,7 +124,6 @@ Make sure you provide an `esc` hatch
 
 If the focus is trapped, you should provide an `esc` hatch. Some groups can use `tab` to leave the group of elements the focus was trapped in. Otherwise, `esc` should close out of the group. Don't trap your users!
 
----
 
 ### How to implement correct keyboard navigation
 
@@ -137,9 +133,7 @@ Expected keyboard navigation is well defined for different widgets.
 2. Use existing, tested components
 3. Build a new component using documented guidelines such as the [ARIA Authoring Practices](https://www.w3.org/TR/wai-aria-practices/), which provide guidance on how custom widgets (menus, tabs, dialogs, ect) should function
 
-### A Challenge
-
-After this meeting, go attempt to use your favorite websites without your mouse.
+### Try to use a website without your mouse
 
 * Can you access your most common features?
 * Are any features that are completely inaccessible?
@@ -152,6 +146,7 @@ After this meeting, go attempt to use your favorite websites without your mouse.
 * Check expected keyboard navigation when you aren't sure
 * Focus indicators need to be visible on interactive elements
 * Test your features using the keyboard
+
 
 ### External Resources
 

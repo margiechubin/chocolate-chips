@@ -3,8 +3,7 @@ import kirkhamTheme from 'typography-theme-kirkham';
 
 const theme = kirkhamTheme;
 theme.headerFontFamily = ['PT Serif', 'serif'];
-theme.bodyFontFamily = ['Inter Regular', 'sans-serif']; //['Roboto', 'sans-serif'];
-// theme.scaleRatio = 1.5;
+theme.bodyFontFamily = ['Roboto', 'sans-serif'];
 theme.baseFontSize = '20px';
 
 const typography = new Typography(theme);

@@ -7,9 +7,9 @@ const Header = ({ siteTitle }) => {
     const linkStyle = {
         color: 'black',
         textDecoration: 'none',
-        padding: '4px 8px',
+        padding: '4px',
         textTransform: 'uppercase',
-        fontFamily: '"PT Sans", sans-serif',
+        fontFamily: '"Roboto", sans-serif',
     };
     const linkActiveStyle = { borderBottom: '3px solid #573ede' }
 
@@ -30,26 +30,24 @@ const Header = ({ siteTitle }) => {
         <header
             style={{
                 marginBottom: rhythm(1.5),
-                display: 'flex',
-                justifyContent: 'space-between',
             }}
         >
-            <h1>
-                <Link
-                    to="/"
-                    style={{
-                        ...linkStyle,
-                        marginLeft: '-4px',
-                        display: 'flex',
-                        flexWrap: 'wrap'
-                    }}
-                    activeStyle={linkActiveStyle}
-                >
-                    {siteTitle}
-                </Link>
-            </h1>
-            <nav className="mainNav">
-                <ul style={{ marginLeft: '0' }}>
+            <nav className="mainNav" aria-label="Main site navigation">
+                <h1>
+                    <Link
+                        to="/"
+                        style={{
+                            ...linkStyle,
+                            marginLeft: '-4px',
+                            display: 'flex',
+                            flexWrap: 'wrap'
+                        }}
+                        activeStyle={linkActiveStyle}
+                    >
+                        {siteTitle}
+                    </Link>
+                </h1>
+                <ul className="mainNav-links">
                     {/* <NavLink to="/resume/">Resume</NavLink> */}
                     {/* <NavLink to="/now/">Now</NavLink> */}
                     <NavLink to="/speaking/">Speaking</NavLink>

@@ -43,7 +43,7 @@ const ContactPage = () => {
                 return (
                     <Layout>
                         <SEO title="Contact" />
-                        <h2>Let's connect!</h2>
+                        <h2>Let's connect</h2>
                         <ul className="List">
                             {contact.map(contactMethodItem)}
                         </ul>

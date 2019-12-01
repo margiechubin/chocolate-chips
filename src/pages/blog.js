@@ -30,7 +30,7 @@ const BlogPage = ({ data }) => {
                             style={{ marginBottom: rhythm(1) }}
                         >
                             <Link to={fileItem.path}>{fileItem.title}</Link>
-                            <p style={{ marginTop: '8px' }}>{fileItem.excerpt}</p>
+                            {/* <p style={{ marginTop: '8px' }}>{fileItem.excerpt}</p> */}
                         </li>
                     );
                 })}
