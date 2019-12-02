@@ -3,4 +3,3 @@
   to = "https://margie.xyz/:splat"
   status = 301
   force = true
-  query = {path = ":path"}
